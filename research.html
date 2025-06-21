@@ -2,160 +2,56 @@
   "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
-<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
-<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<link rel="stylesheet" href="jemdoc.css" type="text/css" />
-<title>Research </title>
+  <meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <link rel="stylesheet" href="jemdoc.css" type="text/css" />
+  <link rel="stylesheet" href="custom.css" type="text/css" />
+  <title>Research</title>
 </head>
+
 <body>
 <table summary="Table for page layout." id="tlayout">
 <tr valign="top">
 <td id="layout-menu">
-<div class="menu-category">Dinesh Karthik M</div>
-<div class="menu-item"><a href="./index.html">Home</a></div>
-<div class="menu-item"><a href="./bio.html">About&nbsp;Me</a></div>
-<div class="menu-item"><a href="./news.html">News</a></div>
-<div class="menu-category">Research</div>
-<div class="menu-item"><a href="./publications.html">Publications</a></div>
-<div class="menu-item"><a href="./research.html" class="current">Research</a></div>
-<div class="menu-category">Contacts</div>
-<div class="menu-item"><a href="./contacts.html">Contact&nbsp;me</a></div>
-<div class="menu-category">External Blogs</div>
-<div class="menu-item"><a href="http://www.offconvex.org/">Off&nbsp;the&nbsp;Convex&nbsp;Path</a></div>
-<div class="menu-item"><a href="https://francisbach.com/">Francis's&nbsp;ML&nbsp;Blog</a></div>
-<div class="menu-item"><a href="https://blog.ml.cmu.edu/">ML@CMU</a></div>
-<div class="menu-item"><a href="https://blogs.princeton.edu/imabandit/">I’m&nbsp;a&nbsp;bandit</a></div>
-<div class="menu-item"><a href="https://www.inference.vc/">inFerence</a></div>
-<div class="menu-item"><a href="https://hunch.net">ML&nbsp;(Theory)</a></div>
+  <div class="menu-category">Dinesh Karthik M</div>
+  <div class="menu-item"><a href="./index.html">Home</a></div>
+  <div class="menu-item"><a href="./bio.html">About&nbsp;Me</a></div>
+  <div class="menu-item"><a href="./news.html">News</a></div>
+  <div class="menu-category">Research</div>
+  <div class="menu-item"><a href="./publications.html">Publications</a></div>
+  <div class="menu-item"><a href="./research.html" class="current">Research</a></div>
+  <div class="menu-category">Contacts</div>
+  <div class="menu-item"><a href="./contacts.html">Contact&nbsp;me</a></div>
+  <div class="menu-category">External Blogs</div>
+  <div class="menu-item"><a href="http://www.offconvex.org/">Off&nbsp;the&nbsp;Convex&nbsp;Path</a></div>
+  <div class="menu-item"><a href="https://francisbach.com/">Francis's&nbsp;ML&nbsp;Blog</a></div>
+  <div class="menu-item"><a href="https://blog.ml.cmu.edu/">ML@CMU</a></div>
+  <div class="menu-item"><a href="https://blogs.princeton.edu/imabandit/">I’m&nbsp;a&nbsp;bandit</a></div>
+  <div class="menu-item"><a href="https://www.inference.vc/">inFerence</a></div>
+  <div class="menu-item"><a href="https://hunch.net">ML&nbsp;(Theory)</a></div>
 </td>
+
 <td id="layout-content">
 <div id="toptitle">
-<h1>Research </h1>
+  <h1>Research</h1>
 </div>
-<h2>Current Research Interests</h2>
 
-[Download PDF](dineshkarthikml/Jan2025_Semester_Project_DK%20(4).pdf)
-  <a href="dineshkarthikml/Jan2025_Semester_Project_DK%20(4).pdf" download>Download PDF</a>
+<div class="infoblock">
+  <div class="blockcontent">
+    <p>This section serves as a placeholder for my ongoing and future research interests. I am currently exploring various topics in machine learning theory and optimization, and will update this page with specific projects and results as they develop.</p>
+  </div>
+</div>
 
-  
-  
-<ol>
-<li><p>Theory of Optimization (Convex , Non-Convex, and Distributed). </p>
-</li>
-<li><p>SGD Generalisation via SDEs and Markov process Theory.</p>
-</li>
-<li><p>Theory of Neural Networks.</p>
-</li>
-<li><p>Explicit and Implicit Bias in Optimization Algorithm.</p>
-</li>
-<li><p>Sampling from General Distributions (Heavy-tailed, Multimodal, and Discrete) and Optimization.</p>
-</li>
-<li><p>Statistical Learning beyond the Standard Models and Assumptions (Non-iid data, Heavy-tailed Noise, and Distribution Shift). </p>
-</li>
-<li><p>Learning under resource constraints (Active Learning, and Coresets). </p>
-</li>
-<li><p>Reinforcement learning and Optimization. </p>
-</li>
-<li><p>Machine learning for healthcare applications. </p>
-</li>
-</ol>
-<h2>Past Research Works</h2>
-<ol>
-<li><p>Convex optimization theory.</p>
-</li>
-<li><p>Kernel Methods.</p>
-</li>
-<li><p>Learning with distributions.</p>
-</li>
-<li><p>Non-parametric methods. </p>
-</li>
-<li><p>Computer vision.</p>
-</li>
-</ol>
-<h1>Marie-Curie Fellowship</h1>
-<h2>Implicit and Explicit Bias in Optimization Algorithms</h2>
-<p>In modern machine learning, successful models are often highly overparameterized, possessing more trainable parameters than training examples. This leads to multiple minimizers that tend to overfit training data and fare poorly with new examples. Surprisingly, when using simple algorithms like (stochastic) gradient descent, specific minimizers yielded have exceptional performance on new data. By selecting a particular training loss minimizer, the optimization algorithm introduces extra learning bias. These biases manifest in two distinct forms: explicit and implicit. Explicit biases are consciously integrated into the objective function to induce solutions with favorable generalization traits. Implicit biases, conversely, stem intrinsically from the optimization process properties, devoid of explicit instructions. Studying models shaped by this bias is pivotal for understanding both the triumphs and constraints of overparameterized models, potentially giving rise to innovative algorithms.
-<br /> <br /> 
-<b>Contributions</b>: A series of papers [1, 2, 3, 4] have underscored the correlation between flatter minima and enhanced generalization. In a recent departure, our work [5] introduces a novel paradigm by injecting noise into model parameters to encourage the exploration of wider minima. This exploration seeks to comprehend the explicit regularization effects induced by modest perturbations across a spectrum of machine learning models, encompassing both simple models and complex over-parametrized neural networks. Our investigation reveals how such perturbations, particularly in simple models, engender explicit regularization grounded in diverse norms such as l1-norm, group l1-norm, and nuclear norms.
-Our earlier work [6] unlocks a compelling connection between the implicit and explicit biases inherent in optimization algorithms. This insight, attained through leveraging duality, not only expedites optimization in convex over-parametrized models but also unveils the implicit convergence of stochastic mirror descent to the minimum mirror map solution. In a recent study [7], our exploration strides into investigating the implicit bias of mirror gradient flow and mirror Langevin within the context of convex problems from an optimal control perspective. This is the first variational formulation of continuous time mirror descent and mirror langevin algorithm. The result is a revelation of mirror descent as a closed-loop solution for a specific optimal control scenario, with the Bellman value function forged from the Bregman divergence between the initial condition and the global minimizer of the objective function. This outcome [7] extends far beyond our prior findings [6]. This body of research uncovers the intricate interplay between biases, vital for optimized solutions across problem domains. <br /> <br /></p>
-<ol>
-<li><p><a href="https://www.bioinf.jku.at/publications/older/3304.pdf">Flat Minima</a> <br />
-Sepp Hochreiter and Jürgen Schmidhuber <br />
-Neural computation, 9(1):1–42, 1997. </p>
-</li>
-<li><p><a href="https://arxiv.org/abs/2010.14761">Wide flat minima and optimal generalization in classifying high-dimensional gaussian mixtures</a> <br />
-Carlo Baldassi, Enrico M Malatesta, Matteo Negri, and Riccardo Zecchina <br />
-Journal of Statistical Mechanics: Theory and Experiment, 2020(12):124012, 2020.</p>
-</li>
-<li><p><a href="https://arxiv.org/abs/2107.01163">Unveiling the structure of wide flat minima in neural networks.</a> <br />
-Carlo Baldassi, Clarissa Lauditi, Enrico M Malatesta, Gabriele Perugini, and Riccardo Zecchina <br />
-Physical Review Letters, 127(27):278301, 2021. </p>
-</li>
-<li><p><a href="https://arxiv.org/abs/2006.07897">Entropic gradient descent algorithms and wide flat minima</a> <br />
-Fabrizio Pittorino, Carlo Lucibello, Christoph Feinauer, Gabriele Perugini, Carlo Baldassi, Elizaveta Demyanenko, and Riccardo
-Zecchina <br />
-Journal of Statistical Mechanics: Theory and Experiment, 2021(12):124015, 2021.</p>
-</li>
-<li><p><a href="https://arxiv.org/abs/2206.04613">Explicit regularization in overparametrized models via noise injection</a> <br />
-Antonio Orvieto*, Anant Raj*, Hans Kersting, and Francis Bach <br />
-International Conference on Artificial Intelligence and Statistics, pages 7265–7287. PMLR, 2023.</p>
-</li>
-<li><p><a href="http://proceedings.mlr.press/v130/raj21a/raj21a.pdf">Explicit regularization of stochastic gradient methods through duality</a> <br />
-Anant Raj and Francis Bach <br />
-International Conference on Artificial Intelligence and Statistics, pages 1882–1890. PMLR, 2021. </p>
-</li>
-<li><p><a href="https://arxiv.org/abs/2303.09532">Variational principles for mirror descent and mirror langevin dynamics</a> <br />
-Belinda Tzen, Anant Raj, Maxim Raginsky, and Francis Bach <br />
-IEEE Control Systems Letters, 2023. </p>
-</li>
-</ol>
-<h2>Generalization of SGD for Non-Convex Learning</h2>
-<p>In machine learning theory, one important research challenge is to understand the behavior and effect of noise in the stochastic gradients on generalization performance while training a model in a non-convex landscape. The noise in the stochastic gradient can be beneficial in helping the optimizer to escape local minima and provide exploration in rugged landscapes, hence helping in achieving better generalization performance. However, the structure of noise depends on the model parameter, loss landscape, and model architecture, and are correlated. That makes it hard to study the effect of noise on generalization.
-Recent strides [4, 5] have utilized Stochastic Differential Equations (SDEs) as proxies for SGD, enabling insights into the effect of noise and generalization in the non-convex landscape. The Stochastic Gradient Langevin Dynamics is a commonly employed SDE for this purpose where the structure of the noise is Gaussian. However, it’s crucial to recognize that not all gradient noise adheres to Gaussian assumptions. A series of studies [6, 7] unveiled heavy-tailed noise behavior in constant step size SGD training of neural networks due to multiplicative gradient noise. <br /> <br /> 
-<b>Contributions</b>: In our recent work [1], we’ve pioneered novel connections between tail behavior and the generalization characteristics of SGD. This was achieved by studying the algorithmic stability of a heavy-tailed SDE, which emulates the observed heavy-tailed behavior in SGD, as demonstrated in the context of a quadratic optimization problem. Notably, our work reveals a non-monotonic relation between the coefficient of heavy tail and generalization. This intriguing insight also aligns with prior empirical findings. Expanding upon this foundation, the extension to general loss functions, including non-convex ones, has been undertaken in [2]. In this extension, we develop Wasserstein stability bounds for heavy-tailed SDEs, which are subsequently converted into generalization bounds. Importantly, these results are underpinned by fundamental principles and do not necessitate intricate assumptions.
-In the endeavor to bridge the void between Markov chain theory, and SGD theory, in a recent work, we utilize the stability result of Markov chains [3] to derive generalization Bounds for (Noisy) Stochastic Gradient Descent that also includes SDEs across a broad spectrum of loss functions, encompassing a subset of non-convex functions. This is the first work to utilize the perturbation theory of Markov chains in the analysis of the generalization properties of variants of SGD. <br /> <br /></p>
-<ol>
-<li><p><a href="https://arxiv.org/abs/2206.01274">Algorithmic Stability of Heavy-Tailed Stochastic Gradient Descent on Least Squares</a> <br />
-Anant Raj, Melih Barsbey, Mert Gürbüzbalaban, Lingjiong Zhu and Umut Şimşekli <br />
-International Conference on Algorithmic Learning Theory (ALT), 2023. </p>
-</li>
-<li><p><a href="https://arxiv.org/abs/2301.11885">Algorithmic Stability of Heavy-Tailed SGD with General Loss Functions</a> <br />
-Anant Raj*, Lingjiong Zhu*, Mert Gürbüzbalaban and Umut Şimşekli <br />
-International Conference on Machine Learning (ICML), 2023. </p>
-</li>
-<li><p><a href="https://arxiv.org/abs/2305.12056">Uniform-in-Time Wasserstein Stability Bounds for (Noisy) Stochastic Gradient Descent</a> <br />
-Lingjiong Zhu, Mert Gürbüzbalaban Anant Raj and Umut Şimşekli <br />
-Advances in Neural Information Processing Systems (Neurips), 2023. </p>
-</li>
-<li><p><a href="https://proceedings.mlr.press/v65/raginsky17a.html">Non-convex learning via stochastic gradient langevin dynamics: a nonasymptotic analysis</a> <br />
-Maxim Raginsky, Alexander Rakhlin, and Matus Telgarsky <br />
-Conference on Learning Theory (COLT), 2017. </p>
-</li>
-<li><p><a href="https://arxiv.org/abs/2004.06977">On Learning Rates and Schrödinger Operators</a> <br />
-Bin Shi, Weijie J. Su, and Michael I. Jordan <br />
-arXiv preprint arXiv:2004.06977, 2020. </p>
-</li>
-<li><p><a href="https://proceedings.mlr.press/v139/gurbuzbalaban21a/gurbuzbalaban21a.pdf">The heavy-tail phenomenon in sgd</a> <br />
-Mert Gurbuzbalaban, Umut Simsekli, and Lingjiong Zhu <br />
-International Conference on Machine Learning, pages 3964–3975. PMLR, 2021. </p>
-</li>
-<li><p><a href="https://arxiv.org/abs/2006.06293">Multiplicative noise and heavy tails in stochastic optimization</a> <br />
-Liam Hodgkinson and Michael Mahoney <br />
-International Conference on Machine Learning, pages 4262–4274. PMLR, 2021. </p>
-</li>
-</ol>
-<h2>Learning in Neural-Networks via Gradient Descent</h2>
-<p>Currently, we are focussing on examining how stochastic gradient descent (SGD) and gradient descent (GD) optimize overparametrized deep neural networks. While there has been progress in understanding feature learning in neural networks through SGD and GD over the past few years, it remains constrained by narrow and strong assumptions. Our aim is to delve into the feature learning processes within complex deep neural networks and foundation models during training with GD or SGD, aiming to achieve near-optimal information-theoretical guarantees for feature learning. Furthermore, we are  investigating the feature learning phenomena in generative models, exploring what kinds of score functions can be learned using gradient descent.</p>
 <div id="footer">
-<div id="footer-text">
-Page generated 2025-05-01 18:09:34 IST, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
-</div>
+  <div id="footer-text">
+    Page generated 2025-06-21, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+  </div>
 </div>
 </td>
 </tr>
 </table>
-<!-- This script will be injected in the pages of the site to collect visiting info fpr Google analytics.-->
-<!-- Use your GoogleAnalytics ID, update the following code and the MY_ID with yours (used two times.)  -->
+
+<!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=MY_ID"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
