@@ -1,15 +1,15 @@
-
 body {
-  background: linear-gradient(to right, #fceabb, #f8b500);
+  background: white;
   font-family: 'Segoe UI', sans-serif;
-  color: #212121;Add commentMore actions
-  background-color: #e3f2fd; /* Pale blue background */
+  color: #212121;
 }
 
 h1, h2 {
   color: #4A148C;
   border-bottom: 2px solid #CE93D8;
   padding-bottom: 5px;
+}
+
 #layout-content {
   background-color: #ffffff;
   padding: 20px;
@@ -21,6 +21,8 @@ ul li {
   margin-bottom: 10px;
   padding: 10px;
   border-left: 5px solid #fbc02d;
+}
+
 .infoblock, .blockcontent, ul li {
   background-color: #fff9c4;
   border-radius: 5px;
@@ -28,7 +30,7 @@ ul li {
 }
 
 a {
-  color: #1e88e5;
+  color: #1565c0;
   text-decoration: none;
 }
 
@@ -48,14 +50,10 @@ a:hover {
   color: #880e4f;
   font-weight: bold;
   margin-top: 15px;
-h1, h2 {
-  color: #4a148c;
 }
 
 .menu-item a {
   display: block;
   padding: 4px;
   color: #4a148c;
-a {
-  color: #1565c0;
 }
