@@ -21,7 +21,7 @@ body {
   top: 0;
   left: 0;
   z-index: -1;
-  opacity: 0.1; /* 10% opacity as requested for better contrast */
+  opacity: 0.25; /* 25% opacity requested for the digital rain */
 }
 
 main, article, header, nav, footer {
@@ -51,7 +51,7 @@ header {
   height: auto;
   border-radius: 4px;
   border: 2px solid var(--matrix-green);
-  filter: grayscale(1) brightness(0.8) contrast(1.2) hue-rotate(120deg); /* Matrix-ify the photo */
+  /* Removed Matrix filters to show the original color photo as requested */
 }
 
 .profile-info h1 {
