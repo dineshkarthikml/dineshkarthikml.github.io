@@ -1,64 +1,90 @@
 :root {
-  --bg-color: #ffffff;
-  --text-color: #000000;
-  --link-color: #0000ee; /* Standard academic blue */
-  --visited-link: #551a8b;
-  --max-width: 900px;
-  --serif-font: 'Lora', Georgia, 'Times New Roman', serif;
-  --sans-font: 'Inter', Arial, sans-serif;
+  --matrix-green: #00FF41;
+  --matrix-dark-green: #008F11;
+  --matrix-bg: #000000;
+  --matrix-border: #003B00;
+  --matrix-glow: rgba(0, 255, 65, 0.5);
+  --telugu-color: #00C8FF; /* Matrix blue for the name as requested */
 }
 
 body {
-  font-family: var(--serif-font);
-  line-height: 1.6;
-  color: var(--text-color);
-  background-color: var(--bg-color);
-  max-width: var(--max-width);
-  margin: 2rem auto;
-  padding: 0 2rem;
+  margin: 0;
+  padding: 0;
+  background-color: var(--matrix-bg);
+  color: var(--matrix-green);
+  font-family: 'Courier New', Courier, monospace;
+  overflow-x: hidden;
+}
+
+#matrixCanvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0.3; /* Subtle rain as discussed */
+}
+
+main, article, header, nav, footer {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.85); /* Semi-transparent sections to see through to the rain */
+  border: 1px solid var(--matrix-border);
+  box-shadow: 0 0 20px var(--matrix-glow);
+  margin-top: 2rem;
 }
 
 header {
-  margin-bottom: 3rem;
-  overflow: hidden; /* Clearfix for floated image */
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  animation: flicker 2s infinite alternate;
+}
+
+@keyframes flicker {
+  from { box-shadow: 0 0 10px var(--matrix-glow); }
+  to { box-shadow: 0 0 30px var(--matrix-glow); }
 }
 
 .profile-photo {
-  float: right;
-  width: 300px; /* Big as requested */
+  width: 200px;
   height: auto;
-  margin-left: 2rem;
-  margin-bottom: 2rem;
-  border-radius: 4px; /* Slight rounding for a clean look */
+  border-radius: 4px;
+  border: 2px solid var(--matrix-green);
+  filter: grayscale(1) brightness(0.8) contrast(1.2) hue-rotate(120deg); /* Matrix-ify the photo */
 }
 
 .profile-info h1 {
   font-size: 2.5rem;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
+  text-shadow: 0 0 10px var(--matrix-green);
 }
 
-.lead {
-  font-size: 1.25rem;
-  font-style: italic;
-  margin-bottom: 1.5rem;
-  color: #333;
-}
-
-.profile-links {
-  margin-top: 1rem;
+.telugu-name {
+  font-size: 1.2rem;
+  color: var(--telugu-color);
+  font-family: Arial, sans-serif; /* Fallback for Telugu characters */
+  display: block;
+  margin-top: 0.5rem;
 }
 
 .profile-links a {
-  margin-right: 1.5rem;
-  font-weight: 500;
+  color: var(--matrix-green);
+  text-decoration: none;
+  font-weight: bold;
+  border: 1px solid var(--matrix-green);
+  padding: 0.5rem 1rem;
+  margin-right: 1rem;
+  transition: all 0.3s;
+}
+
+.profile-links a:hover {
+  background-color: var(--matrix-green);
+  color: var(--matrix-bg);
+  box-shadow: 0 0 15px var(--matrix-green);
 }
 
 nav {
-  border-top: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
-  padding: 0.5rem 0;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 nav ul {
@@ -70,70 +96,39 @@ nav ul {
 
 nav a {
   text-decoration: none;
-  font-family: var(--sans-font);
-  font-size: 0.95rem;
-  color: var(--text-color);
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
-main {
-  clear: both;
+  color: var(--matrix-green);
+  font-weight: bold;
 }
 
 h2 {
-  font-size: 1.75rem;
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 0.25rem;
-  margin: 3rem 0 1rem 0;
+  font-size: 2rem;
+  border-bottom: 2px solid var(--matrix-green);
+  padding-bottom: 0.5rem;
+  margin-top: 3rem;
+  text-transform: uppercase;
 }
 
-h3 {
-  font-size: 1.3rem;
-  margin-top: 2rem;
-}
-
-ul {
-  margin-bottom: 1.5rem;
-}
-
-li {
-  margin-bottom: 0.75rem;
+p {
+  line-height: 1.8;
 }
 
 a {
-  color: var(--link-color);
+  color: var(--matrix-green);
+  text-decoration: underline;
 }
 
-a:visited {
-  color: var(--visited-link);
+a:hover {
+  text-shadow: 0 0 10px var(--matrix-green);
 }
 
 footer {
-  margin-top: 5rem;
-  padding: 2rem 0;
-  border-top: 1px solid #ccc;
+  text-align: center;
   font-size: 0.9rem;
-  text-align: left;
+  color: var(--matrix-dark-green);
 }
 
-/* KaTeX Adjustment */
-.katex { font-size: 1.1em !important; }
-
 @media (max-width: 750px) {
-  .profile-photo {
-    float: none;
-    width: 100%;
-    max-width: 400px;
-    display: block;
-    margin: 0 auto 2rem auto;
-  }
-  .profile-info {
-    text-align: center;
-  }
-  nav ul {
-    justify-content: center;
-  }
+  header { flex-direction: column; text-align: center; }
+  .profile-links { display: flex; flex-direction: column; gap: 1rem; }
+  .profile-photo { width: 150px; }
 }
