@@ -1,174 +1,178 @@
 :root {
-  --matrix-green: #00FF41;
-  --matrix-dark-green: #008F11;
-  --matrix-bg: #000000;
-  --matrix-border: #003B00;
-  --matrix-glow: rgba(0, 255, 65, 0.5);
-  --telugu-color: #00C8FF;
-  /* Matrix blue for the name as requested */
+  --bg-color: #ffffff;
+  --text-color: #1a1a1a;
+  --accent-color: #0066cc;
+  --secondary-color: #666666;
+  --link-color: #0066cc;
+  --link-hover-color: #004499;
+  --telugu-color: #4a5568; /* Subtle slate for Telugu name */
 }
 
 body {
   margin: 0;
   padding: 0;
-  background-color: var(--matrix-bg);
-  color: var(--matrix-green);
-  font-family: 'Courier New', Courier, monospace;
-  overflow-x: hidden;
-}
-
-#matrixCanvas {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  opacity: 0.10;
-  /* 10% opacity requested for the digital rain */
-}
-
-main,
-article,
-header,
-nav,
-footer {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 2rem;
-  background-color: rgba(0, 0, 0, 0.9);
-  /* Solid black background with very slight transparency */
-  border: 1px solid var(--matrix-border);
-  box-shadow: 0 0 20px var(--matrix-glow);
-  margin-top: 2rem;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
 }
 
 header {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 2rem;
   display: flex;
-  align-items: center;
+  justify-content: space-between;
+  align-items: flex-start;
   gap: 2rem;
-  animation: flicker 2s infinite alternate;
 }
 
-@keyframes flicker {
-  from {
-    box-shadow: 0 0 10px var(--matrix-glow);
-  }
-
-  to {
-    box-shadow: 0 0 30px var(--matrix-glow);
-  }
-}
-
-.profile-photo {
-  width: 200px;
-  height: auto;
-  border-radius: 4px;
-  border: 2px solid var(--matrix-green);
-  /* Removed Matrix filters to show the original color photo as requested */
+.profile-info {
+  flex: 1;
 }
 
 .profile-info h1 {
-  font-size: 2.5rem;
-  text-shadow: 0 0 10px var(--matrix-green), 0 0 20px rgba(0, 0, 0, 0.9);
-  /* Heavy shadow for contrast */
+  font-family: 'Lora', serif;
+  font-size: 2.8rem;
+  margin: 0;
+  color: #000;
 }
 
 .telugu-name {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: var(--telugu-color);
-  font-family: Arial, sans-serif;
-  /* Fallback for Telugu characters */
   display: block;
-  margin-top: 0.5rem;
-  text-shadow: 0 0 10px var(--telugu-color), 0 0 20px rgba(0, 0, 0, 0.9);
+  margin: 0.2rem 0 1rem 0;
+}
+
+.lead {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--secondary-color);
+  margin: 0.5rem 0 1.5rem 0;
+}
+
+.profile-photo {
+  width: 300px; /* Big photo as requested previously */
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-links {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1rem;
 }
 
 .profile-links a {
-  color: var(--matrix-green);
   text-decoration: none;
-  font-weight: bold;
-  border: 1px solid var(--matrix-green);
-  padding: 0.5rem 1rem;
-  margin-right: 1rem;
-  transition: all 0.3s;
-  background-color: rgba(0, 0, 0, 0.6);
-  /* Translucent buttons for readability */
+  font-weight: 600;
+  color: var(--link-color);
+  transition: color 0.2s;
 }
 
 .profile-links a:hover {
-  background-color: var(--matrix-green);
-  color: var(--matrix-bg);
-  box-shadow: 0 0 15px var(--matrix-green);
+  color: var(--link-hover-color);
 }
 
 nav {
-  margin-bottom: 2rem;
+  position: sticky;
+  top: 0;
+  background-color: var(--bg-color);
+  border-bottom: 1px solid #eee;
+  z-index: 100;
+  padding: 0.5rem 0;
 }
 
 nav ul {
-  list-style: none;
-  padding: 0;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 2rem;
   display: flex;
+  list-style: none;
   gap: 2rem;
 }
 
 nav a {
   text-decoration: none;
-  color: var(--matrix-green);
-  font-weight: bold;
-  text-shadow: 0 0 10px var(--matrix-green), 0 0 20px rgba(0, 0, 0, 0.9);
+  color: var(--text-color);
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+nav a:hover {
+  color: var(--accent-color);
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+section {
+  margin-bottom: 4rem;
 }
 
 h2 {
-  font-size: 2rem;
-  border-bottom: 2px solid var(--matrix-green);
+  font-family: 'Lora', serif;
+  font-size: 1.8rem;
+  border-bottom: 2px solid #edeff2;
   padding-bottom: 0.5rem;
-  margin-top: 3rem;
-  text-transform: uppercase;
-  text-shadow: 0 0 10px var(--matrix-green), 0 0 20px rgba(0, 0, 0, 0.9);
+  margin-bottom: 1.5rem;
 }
 
-p {
-  line-height: 1.8;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
-  /* Strong text-shadow for readability on rain */
+h3 {
+  font-family: 'Lora', serif;
+  font-size: 1.4rem;
+  margin-top: 2rem;
+}
+
+ul {
+  padding-left: 1.5rem;
+}
+
+li {
+  margin-bottom: 0.75rem;
 }
 
 a {
-  color: var(--matrix-green);
-  text-decoration: underline;
-  text-shadow: 0 0 10px var(--matrix-green), 0 0 20px rgba(0, 0, 0, 0.9);
+  color: var(--link-color);
+  text-decoration: none;
 }
 
 a:hover {
-  text-shadow: 0 0 20px var(--matrix-green), 0 0 30px rgba(0, 0, 0, 1);
+  text-decoration: underline;
+}
+
+.project-links {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
 }
 
 footer {
-  text-align: center;
+  max-width: 1000px;
+  margin: 4rem auto 2rem;
+  padding: 2rem;
+  border-top: 1px solid #eee;
+  color: var(--secondary-color);
   font-size: 0.9rem;
-  color: var(--matrix-dark-green);
-  text-shadow: 0 0 10px var(--matrix-dark-green), 0 0 20px rgba(0, 0, 0, 0.9);
+  text-align: center;
 }
 
-/* Enhancing KaTeX on Matrix background */
-.katex {
-  color: var(--matrix-green) !important;
-  text-shadow: 0 0 10px var(--matrix-green), 0 0 20px rgba(0, 0, 0, 0.9);
-}
-
-@media (max-width: 750px) {
+@media (max-width: 850px) {
   header {
-    flex-direction: column;
+    flex-direction: column-reverse;
+    align-items: center;
     text-align: center;
   }
-
-  .profile-links {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
-
   .profile-photo {
-    width: 150px;
+    width: 200px;
+  }
+  nav ul {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
   }
 }
