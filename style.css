@@ -4,7 +4,8 @@
   --matrix-bg: #000000;
   --matrix-border: #003B00;
   --matrix-glow: rgba(0, 255, 65, 0.5);
-  --telugu-color: #00C8FF; /* Matrix blue for the name as requested */
+  --telugu-color: #00C8FF;
+  /* Matrix blue for the name as requested */
 }
 
 body {
@@ -21,14 +22,20 @@ body {
   top: 0;
   left: 0;
   z-index: -1;
-  opacity: 0.25; /* 25% opacity requested for the digital rain */
+  opacity: 0.20;
+  /* 20% opacity requested for the digital rain */
 }
 
-main, article, header, nav, footer {
+main,
+article,
+header,
+nav,
+footer {
   max-width: 900px;
   margin: 0 auto;
   padding: 2rem;
-  background-color: transparent !important; /* Fully transparent as requested */
+  background-color: transparent !important;
+  /* Fully transparent as requested */
   border: 1px solid var(--matrix-border);
   box-shadow: 0 0 20px var(--matrix-glow);
   margin-top: 2rem;
@@ -42,8 +49,13 @@ header {
 }
 
 @keyframes flicker {
-  from { box-shadow: 0 0 10px var(--matrix-glow); }
-  to { box-shadow: 0 0 30px var(--matrix-glow); }
+  from {
+    box-shadow: 0 0 10px var(--matrix-glow);
+  }
+
+  to {
+    box-shadow: 0 0 30px var(--matrix-glow);
+  }
 }
 
 .profile-photo {
@@ -56,13 +68,15 @@ header {
 
 .profile-info h1 {
   font-size: 2.5rem;
-  text-shadow: 0 0 10px var(--matrix-green), 0 0 20px rgba(0, 0, 0, 0.9); /* Heavy shadow for contrast */
+  text-shadow: 0 0 10px var(--matrix-green), 0 0 20px rgba(0, 0, 0, 0.9);
+  /* Heavy shadow for contrast */
 }
 
 .telugu-name {
   font-size: 1.2rem;
   color: var(--telugu-color);
-  font-family: Arial, sans-serif; /* Fallback for Telugu characters */
+  font-family: Arial, sans-serif;
+  /* Fallback for Telugu characters */
   display: block;
   margin-top: 0.5rem;
   text-shadow: 0 0 10px var(--telugu-color), 0 0 20px rgba(0, 0, 0, 0.9);
@@ -76,7 +90,8 @@ header {
   padding: 0.5rem 1rem;
   margin-right: 1rem;
   transition: all 0.3s;
-  background-color: rgba(0, 0, 0, 0.6); /* Translucent buttons for readability */
+  background-color: rgba(0, 0, 0, 0.6);
+  /* Translucent buttons for readability */
 }
 
 .profile-links a:hover {
@@ -114,7 +129,8 @@ h2 {
 
 p {
   line-height: 1.8;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9); /* Strong text-shadow for readability on rain */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+  /* Strong text-shadow for readability on rain */
 }
 
 a {
@@ -141,7 +157,18 @@ footer {
 }
 
 @media (max-width: 750px) {
-  header { flex-direction: column; text-align: center; }
-  .profile-links { display: flex; flex-direction: column; gap: 1rem; }
-  .profile-photo { width: 150px; }
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .profile-photo {
+    width: 150px;
+  }
 }
