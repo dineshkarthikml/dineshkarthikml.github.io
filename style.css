@@ -13,7 +13,8 @@ body {
   padding: 0;
   background-color: var(--bg-color);
   color: var(--text-color);
-  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 500; /* Monospace Medium */
   line-height: 1.6;
 }
 
@@ -32,7 +33,8 @@ header {
 }
 
 .profile-info h1 {
-  font-family: 'Lora', serif;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 700;
   font-size: 2.8rem;
   margin: 0;
   color: #000;
@@ -116,7 +118,8 @@ section {
 }
 
 h2 {
-  font-family: 'Lora', serif;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 700;
   font-size: 1.8rem;
   border-bottom: 2px solid #edeff2;
   padding-bottom: 0.5rem;
@@ -124,7 +127,8 @@ h2 {
 }
 
 h3 {
-  font-family: 'Lora', serif;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 700;
   font-size: 1.4rem;
   margin-top: 2rem;
 }
