@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Beyond the Hype: What Is Artificial Intelligence Really Learning? - Dinesh Karthik Mulumudi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body);"></script>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        .paper-container {
+            background-color: white;
+            padding: 40px 60px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 2rem;
+        }
+
+        header.article-header {
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 2px solid #333;
+            padding-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2.2em;
+            margin-bottom: 10px;
+        }
+
+        .date {
+            font-style: italic;
+            color: #666;
+        }
+
+        h2 {
+            font-size: 1.6em;
+            margin-top: 30px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .quote {
+            font-style: italic;
+            margin: 20px 40px;
+            padding-left: 15px;
+            border-left: 3px solid #ccc;
+        }
+
+        footer.article-footer {
+            margin-top: 50px;
+            font-size: 0.9em;
+            border-top: 1px solid #ccc;
+            padding-top: 20px;
+        }
+
+        .references {
+            font-size: 0.85em;
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .references li {
+            margin-bottom: 10px;
+            text-indent: -20px;
+            padding-left: 20px;
+        }
+
+        .author-info {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 30px;
+        }
+
+        nav.site-nav {
+            background: white;
+            padding: 1rem;
+            border-bottom: 2px solid #000;
+            margin-bottom: 1rem;
+        }
+
+        nav.site-nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav.site-nav a {
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+        }
+
+        nav.site-nav a:hover {
+            color: #004499;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="site-nav">
+        <ul>
+            <li><a href="index.html">About</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="blogs.html">For Fun</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="paper-container">
+        <header class="article-header">
+            <h1>Beyond the Hype: What Is Artificial Intelligence Really Learning?</h1>
+            <div class="date">December 31, 2025</div>
+        </header>
+
+        <section>
+            <p>Artificial intelligence is increasingly identified with large language models (currently based on the transformer architecture [1]) systems capable of producing fluent text, writing software, and answering questions with remarkable ease. Yet, this rapid and evident progress risks obscuring a more fundamental issue: What precisely do contemporary AI systems learn, and how does that learning relate to scientific understanding?</p>
+
+            <p>The recent surge in generative models has revived long-standing questions about the nature of intelligence, learning, and explanation. Although performance has advanced at an extraordinary pace, conceptual clarity has not kept up. As AI becomes a staple in scientific research, medicine, and decision-making, it is increasingly important to distinguish predictive capability from understanding, and automation from insight.</p>
+        </section>
+
+        <section>
+            <h2>Learning at Scale</h2>
+            <p>Modern AI research is dominated by data-driven learning systems, particularly deep neural networks trained at unprecedented scale. These systems differ from earlier approaches not because they implement fundamentally new ideas, but because they exploit vast datasets and computational resources to learn internal representations directly from raw inputs. This emphasis on representation learning rather than explicit rules or symbolic reasoning has proven enormously effective.</p>
+
+            <p>End-to-end trained neural networks can extract structure from images, speech, and text with minimal prior assumptions, without suffering from overfitting. Classical statistics, however, was unable to explain this phenomenon, known as Double descent. Yet this success has come at a cost. As models grow, their internal mechanisms become harder to characterize, their training dynamics more opaque, and their behavior more difficult to predict outside carefully curated benchmarks. The field has advanced empirically, but with limited theoretical consolidation.</p>
+
+            <p>Nobel laureate Geoffrey Hinton has argued that while AI holds enormous promise, its rapid progress poses serious risks if not matched by careful regulation and human oversight [2].</p>
+        </section>
+
+        <section>
+            <h2>"The Bitter Lesson"</h2>
+            <p>This trajectory reflects a broader pattern identified by Richard Sutton (Considered the father of RL and Turing Award winner 2024), who argued that the largest gains in AI have historically come not from human-designed structures, but from methods that scale with computation and data. In reinforcement learning, agents improve performance by interacting with an environment and optimizing reward through repeated trial and error.</p>
+
+            <p>Over time, approaches that rely on general-purpose learning and massive experience have consistently outperformed more carefully engineered alternatives. This observation by Richard Sutton often referred to as "the bitter lesson" [3] is uncomfortable. It suggests that progress in AI owes less to insight into intelligence and more to brute-force optimization. From this perspective, intelligence emerges not from elegant theory, but from relentless statistical pressure applied at scale. The lesson is not that theory is useless, but that it has played a surprisingly small role in recent breakthroughs.</p>
+        </section>
+
+        <section>
+            <h2>Scale Versus Structure</h2>
+            <p>Contemporary AI research is heavily invested in scaling laws: empirical regularities that relate model size, dataset size, and performance. These laws have been remarkably predictive and have guided the construction of increasingly large systems. However, scaling alone offers limited guidance about how models work, why they fail, or how they might generalize beyond their training regimes.</p>
+
+            <p>In response, there is renewed interest in embedding structure and prior knowledge into learning systems. Physics-informed neural networks, for example, incorporate conservation laws or differential equations directly into model architectures or loss functions. Similar ideas appear in causal modeling, equivariant networks, and hybrid symbolic-neural systems. These approaches reflect a growing recognition that inductive bias matters not only for efficiency, but for Interpretability and reliability. Pure scale may deliver performance, but structure may be essential for scientific understanding.</p>
+        </section>
+
+        <section>
+            <h2>AI as a Scientific Instrument</h2>
+            <p>AI is already reshaping scientific practice. Perhaps the most prominent example is protein structure prediction, where deep learning systems have achieved accuracy that rivals experimental methods. The Nobel Prize in 2024 for chemistry was awarded for the same [4]. These advances have accelerated research in biology and medicine, enabling rapid hypothesis generation and guiding experimental design.</p>
+
+            <p>At the same time, these successes highlight an important asymmetry. AI systems can predict outcomes with high accuracy while offering limited insight into underlying mechanisms. In protein folding, models can infer structure from sequence without explicitly representing the physical processes that produce it. The result is a powerful predictive tool, but not a complete explanatory theory.</p>
+
+            <p>As emphasized by Terence Tao (during his talk at IMO 2024), current AI systems already assist mathematicians in drafting arguments, exploring proof strategies, and formal verification. Yet their role remains fundamentally supportive: they accelerate exploration without supplying the conceptual insight that guides it. AI can suggest patterns and fill gaps, but deciding what is worth proving and why remains a human responsibility [5].</p>
+        </section>
+
+        <section>
+            <h2>The Problem of Interpretability</h2>
+            <p>One of the central tensions in modern AI is interpretability and explainability. A range of techniques, such as feature attribution, saliency maps, and dimensionality reduction aim to explain model predictions by identifying influential inputs or internal components. These methods are often useful in practice, particularly in applied settings where transparency is required. However, such explanations are typically post hoc and qualitative. They describe correlations within trained models rather than causal mechanisms.</p>
+        </section>
+
+        <section>
+            <h2>Prediction Without Explanation</h2>
+            <p>Science seeks explanations: why phenomena occur and how they arise from underlying principles. By contrast, many AI systems excel at producing answers without providing reasons. For instance, data-driven weather models such as GraphCast and Pangu-Weather have surpassed traditional physics-based dynamical models in forecasting accuracy, while leaving the underlying physical explanations of atmospheric phenomena largely unresolved.</p>
+
+            <p>Without guarantees or interpretive frameworks, predictions risk becoming isolated facts rather than components of coherent understanding. In such cases, AI functions as an empirical instrument—powerful but epistemically incomplete. This limitation ensures that human judgment remains indispensable.</p>
+        </section>
+
+        <section>
+            <h2>Looking Forward</h2>
+            <p>The prospect of Artificial General Intelligence continues to animate debate. Capability has outpaced comprehension, and the gap shows no sign of closing automatically. What is clear is the enduring role of theorists and mathematicians. As computation becomes abundant, the bottleneck shifts toward conceptual clarity: identifying the right abstractions, formulating the right questions, and connecting empirical results to principled frameworks.</p>
+
+            <p class="quote">"The critical task, therefore, is not to compute faster, but to think more carefully. AI makes finding answers easier; it does not tell us what is worth asking."</p>
+        </section>
+
+        <div class="author-info">
+            <h3>About the Author</h3>
+            <p><strong>Dinesh Karthik M</strong>, BS-MS 2027. Majoring in Mathematics with a minor in Data Science at <a href="https://www.iiserpune.ac.in/">IISER Pune</a>, with an interest in Theoretical Machine Learning.</p>
+            <p><em>Acknowledgement: The author sincerely thanks Devarshini M for her assistance in editing the final draft of the article.</em></p>
+        </div>
+
+        <footer class="article-footer">
+            <h3>References</h3>
+            <ul class="references">
+                <li>[1] A. Vaswani et al., "Attention Is All You Need," Advances in Neural Information Processing Systems, 2017.</li>
+                <li>[2] G. Hinton, "Geoffrey Hinton discusses promise and perils of AI at Toronto Tech Week," University of Toronto News, 2024.</li>
+                <li>[3] R. S. Sutton, "The Bitter Lesson," 2019.</li>
+                <li>[4] Nature Editorial, "Why AlphaFold earned the 2024 Nobel Prize in Chemistry," Nature, 2024.</li>
+                <li>[5] T. Tao, "AI and Mathematics," Talk at IMO 2024.</li>
+                <li>[6] Frontiers in Environmental Science, "AI in extreme weather events prediction and response," 2025.</li>
+            </ul>
+        </footer>
+    </div>
+
+    <footer style="margin-top: 4rem; text-align: center; color: #666; font-size: 0.9rem;">
+        <p>&copy; 2026 Dinesh Karthik Mulumudi · Indian Institute of Science Education and Research (IISER), Pune</p>
+    </footer>
+
+</body>
+
+</html>
