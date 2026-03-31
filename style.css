@@ -34,8 +34,8 @@ footer {
   max-width: 900px;
   margin: 0 auto;
   padding: 2rem;
-  background-color: transparent !important;
-  /* Fully transparent as requested */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Solid black background with very slight transparency */
   border: 1px solid var(--matrix-border);
   box-shadow: 0 0 20px var(--matrix-glow);
   margin-top: 2rem;
