@@ -22,8 +22,8 @@ body {
   top: 0;
   left: 0;
   z-index: -1;
-  opacity: 0.20;
-  /* 20% opacity requested for the digital rain */
+  opacity: 0.10;
+  /* 10% opacity requested for the digital rain */
 }
 
 main,
