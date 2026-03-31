@@ -18,26 +18,66 @@ body {
 }
 
 header {
-  margin-bottom: 2.5rem;
+  margin-bottom: 3.5rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+header .profile-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--border-color);
+  background-color: #f9f9f9;
+}
+
+header .profile-info {
+  flex: 1;
 }
 
 header h1 {
-  font-size: 2.2rem;
+  font-size: 2.25rem;
   font-weight: 700;
   margin: 0 0 0.5rem 0;
   letter-spacing: -0.02em;
 }
 
 header p.lead {
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   color: var(--secondary-text-color);
-  margin: 0;
+  margin: 0 0 1rem 0;
+}
+
+.profile-links {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.profile-links a {
+  color: var(--text-color);
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 2px;
+}
+
+.profile-links a:hover {
+  border-bottom-color: var(--link-color);
+  color: var(--link-color);
+  text-decoration: none;
 }
 
 nav {
-  margin-bottom: 3rem;
+  position: sticky;
+  top: 0;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  z-index: 100;
+  margin-bottom: 3.5rem;
+  padding: 1rem 0;
   border-bottom: 1px solid var(--border-color);
-  padding-bottom: 0.75rem;
 }
 
 nav ul {
@@ -46,50 +86,57 @@ nav ul {
   margin: 0;
   display: flex;
   flex-wrap: wrap;
-  gap: 1.5rem;
+  gap: 2rem;
 }
 
 nav a {
   text-decoration: none;
-  color: var(--text-color);
+  color: var(--secondary-text-color);
   font-weight: 500;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
+  transition: color 0.2s;
 }
 
 nav a:hover {
-  text-decoration: underline;
-  text-underline-offset: 4px;
+  color: var(--text-color);
+  text-decoration: none;
 }
 
 article h2 {
-  font-size: 1.5rem;
-  margin: 2.5rem 0 1rem 0;
+  font-size: 1.6rem;
+  margin: 4rem 0 1.5rem 0;
   font-weight: 600;
   border-bottom: 1px solid var(--border-color);
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.75rem;
+  scroll-margin-top: 5rem;
 }
 
 section {
-  margin-bottom: 2.5rem;
+  margin-bottom: 3rem;
 }
 
 section h3 {
-  font-size: 1.15rem;
-  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  margin-bottom: 0.6rem;
   font-weight: 600;
 }
 
 ul {
-  padding-left: 1.25rem;
+  padding-left: 1.5rem;
   list-style-type: disc;
 }
 
 li {
-  margin-bottom: 0.75rem;
+  margin-bottom: 1rem;
 }
 
 li strong {
   font-weight: 600;
+}
+
+.project-links {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
 }
 
 a {
@@ -102,21 +149,17 @@ a:hover {
 }
 
 footer {
-  margin-top: 5rem;
-  padding-top: 1.5rem;
+  margin-top: 6rem;
+  padding-top: 2rem;
   border-top: 1px solid var(--border-color);
   font-size: 0.85rem;
   color: var(--secondary-text-color);
   text-align: center;
 }
 
-.coursework-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 1.5rem;
-}
-
 @media (max-width: 600px) {
+  header { flex-direction: column; text-align: center; gap: 1rem; }
   header h1 { font-size: 1.8rem; }
-  nav ul { gap: 1rem; }
+  nav ul { gap: 1rem; justify-content: center; }
+  .profile-links { justify-content: center; }
 }
