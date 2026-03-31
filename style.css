@@ -1,11 +1,11 @@
 :root {
   --bg-color: #ffffff;
-  --text-color: #1a1a1a;
-  --accent-color: #0066cc;
-  --secondary-color: #666666;
-  --link-color: #0066cc;
-  --link-hover-color: #004499;
-  --telugu-color: #4a5568; /* Subtle slate for Telugu name */
+  --text-color: #000000;
+  --accent-color: #004499;
+  --secondary-color: #333333;
+  --link-color: #004499;
+  --link-hover-color: #002266;
+  --telugu-color: #4a5568;
 }
 
 body {
@@ -13,9 +13,9 @@ body {
   padding: 0;
   background-color: var(--bg-color);
   color: var(--text-color);
-  font-family: 'Roboto Mono', monospace;
-  font-weight: 500; /* Monospace Medium */
-  line-height: 1.6;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.15rem;
+  line-height: 1.5;
 }
 
 header {
@@ -33,32 +33,29 @@ header {
 }
 
 .profile-info h1 {
-  font-family: 'Roboto Mono', monospace;
-  font-weight: 700;
-  font-size: 2.8rem;
+  font-size: 3rem;
   margin: 0;
-  color: #000;
+  font-weight: bold;
 }
 
 .telugu-name {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: var(--telugu-color);
   display: block;
   margin: 0.2rem 0 1rem 0;
 }
 
 .lead {
-  font-size: 1.25rem;
-  font-weight: 500;
+  font-size: 1.3rem;
+  font-style: italic;
   color: var(--secondary-color);
   margin: 0.5rem 0 1.5rem 0;
 }
 
 .profile-photo {
-  width: 300px; /* Big photo as requested previously */
+  width: 300px;
   height: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
 }
 
 .profile-links {
@@ -69,22 +66,21 @@ header {
 
 .profile-links a {
   text-decoration: none;
-  font-weight: 600;
+  font-weight: bold;
   color: var(--link-color);
-  transition: color 0.2s;
 }
 
 .profile-links a:hover {
-  color: var(--link-hover-color);
+  text-decoration: underline;
 }
 
 nav {
   position: sticky;
   top: 0;
   background-color: var(--bg-color);
-  border-bottom: 1px solid #eee;
+  border-bottom: 2px solid #000;
   z-index: 100;
-  padding: 0.5rem 0;
+  padding: 0.75rem 0;
 }
 
 nav ul {
@@ -93,18 +89,19 @@ nav ul {
   padding: 0 2rem;
   display: flex;
   list-style: none;
-  gap: 2rem;
+  gap: 2.5rem;
 }
 
 nav a {
   text-decoration: none;
   color: var(--text-color);
-  font-weight: 500;
-  font-size: 0.95rem;
+  font-weight: bold;
+  font-size: 1rem;
 }
 
 nav a:hover {
   color: var(--accent-color);
+  text-decoration: underline;
 }
 
 main {
@@ -118,19 +115,18 @@ section {
 }
 
 h2 {
-  font-family: 'Roboto Mono', monospace;
-  font-weight: 700;
-  font-size: 1.8rem;
-  border-bottom: 2px solid #edeff2;
-  padding-bottom: 0.5rem;
+  font-size: 2rem;
+  border-bottom: 2px solid #000;
+  padding-bottom: 0.4rem;
   margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 h3 {
-  font-family: 'Roboto Mono', monospace;
-  font-weight: 700;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   margin-top: 2rem;
+  font-style: italic;
 }
 
 ul {
@@ -138,30 +134,30 @@ ul {
 }
 
 li {
-  margin-bottom: 0.75rem;
+  margin-bottom: 1rem;
 }
 
 a {
   color: var(--link-color);
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 a:hover {
-  text-decoration: underline;
+  color: var(--link-hover-color);
 }
 
 .project-links {
   margin-top: 0.5rem;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 footer {
   max-width: 1000px;
   margin: 4rem auto 2rem;
   padding: 2rem;
-  border-top: 1px solid #eee;
+  border-top: 2px solid #000;
   color: var(--secondary-color);
-  font-size: 0.9rem;
+  font-size: 1rem;
   text-align: center;
 }
 
@@ -172,7 +168,7 @@ footer {
     text-align: center;
   }
   .profile-photo {
-    width: 200px;
+    width: 250px;
   }
   nav ul {
     justify-content: center;
