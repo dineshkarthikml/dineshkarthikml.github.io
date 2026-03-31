@@ -5,62 +5,85 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Movies - Dinesh Karthik Mulumudi</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        header {
+            border-bottom: 2px solid #333;
+            padding-bottom: 1rem;
+            margin-bottom: 2rem;
+        }
+        nav a {
+            text-decoration: none;
+            color: #0066cc;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        article {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 { margin-top: 0; }
+        h2 { color: #444; border-bottom: 1px solid #ccc; padding-bottom: 0.5rem; }
+        .movie-entry { margin-bottom: 2rem; }
+        .movie-title { font-size: 1.25rem; font-weight: bold; }
+        .movie-year { color: #666; font-style: italic; }
+        footer {
+            margin-top: 4rem;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #777;
+        }
+    </style>
 </head>
 
 <body>
-    <header>
-        <div class="profile-info">
-            <h1>Dinesh Karthik Mulumudi</h1>
-            <span class="telugu-name">దినేష్ కార్తీక్ ముళుమూడి</span>
-            <p class="lead">My Movie Recommendations</p>
-            <div class="profile-links">
-                <a href="index.html">Back to Home</a>
-                <a href="blogs.html">Back to For Fun</a>
-            </div>
-        </div>
-        <img src="images/profile.jpeg" alt="Dinesh Karthik Mulumudi" class="profile-photo">
-    </header>
-    
     <nav>
-        <ul>
-            <li><a href="index.html#about">About</a></li>
-            <li><a href="index.html#education">Education</a></li>
-            <li><a href="index.html#experience">Experience</a></li>
-            <li><a href="index.html#publications">Publications</a></li>
-            <li><a href="index.html#projects">Projects</a></li>
-            <li><a href="blogs.html">For Fun</a></li>
-            <li><a href="index.html#contact">Contact</a></li>
-        </ul>
+        <a href="index.html">← Back to Home</a> | <a href="blogs.html">← Back to For Fun</a>
     </nav>
+    <header>
+        <h1>My Movie Recommendations</h1>
+        <p>A collection of movies I've watched and my thoughts on them.</p>
+    </header>
 
     <main>
         <article>
-            <section id="movie-intro">
-                <h2>Movies</h2>
-                <p>Movies are a great way to explore new perspectives and relax. Here are some of my all-time favorites and recommendations.</p>
-                
-                <h3>Recommended Movies</h3>
-                <ul class="movie-list">
-                    <li>
-                        <strong>The Matrix</strong> (1999) - A masterpiece of science fiction and philosophy.
-                    </li>
-                    <li>
-                        <strong>Inception</strong> (2010) - A deep dive into the human mind and dreams.
-                    </li>
-                    <li>
-                        <strong>The Shawshank Redemption</strong> (1994) - A timeless story of hope and friendship.
-                    </li>
-                </ul>
+            <section class="movie-entry">
+                <h2>All-Time Favorites</h2>
+                <div class="movie-title">The Matrix <span class="movie-year">(1999)</span></div>
+                <p>A revolutionary film that perfectly blends high-concept science fiction with philosophy and groundbreaking action. It's the ultimate movie about questioning reality.</p>
+            </section>
+
+            <section class="movie-entry">
+                <div class="movie-title">Inception <span class="movie-year">(2010)</span></div>
+                <p>Christopher Nolan's masterpiece on the architecture of dreams. It's a complex, visually stunning thriller that stays with you long after the credits roll.</p>
+            </section>
+
+            <section class="movie-entry">
+                <div class="movie-title">Interstellar <span class="movie-year">(2014)</span></div>
+                <p>An emotional journey through space and time. The scientific accuracy combined with a powerful father-daughter story makes it one of my favorites.</p>
+            </section>
+
+            <section class="movie-entry">
+                <h2>Recent Watches</h2>
+                <p>I'll be adding more reviews and thoughts here as I watch new films. Stay tuned!</p>
             </section>
         </article>
     </main>
 
     <footer>
-        <p>&copy; 2026 Dinesh Karthik Mulumudi · Indian Institute of Science Education and Research (IISER), Pune</p>
+        <p>&copy; 2026 Dinesh Karthik Mulumudi</p>
     </footer>
 </body>
 
