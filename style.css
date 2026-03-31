@@ -21,14 +21,14 @@ body {
   top: 0;
   left: 0;
   z-index: -1;
-  opacity: 0.3; /* Subtle rain as discussed */
+  opacity: 0.8; /* Increased opacity to enhance rain over transparency */
 }
 
 main, article, header, nav, footer {
   max-width: 900px;
   margin: 0 auto;
   padding: 2rem;
-  background-color: rgba(0, 0, 0, 0.85); /* Semi-transparent sections to see through to the rain */
+  background-color: transparent !important; /* Fully transparent as requested */
   border: 1px solid var(--matrix-border);
   box-shadow: 0 0 20px var(--matrix-glow);
   margin-top: 2rem;
@@ -56,7 +56,7 @@ header {
 
 .profile-info h1 {
   font-size: 2.5rem;
-  text-shadow: 0 0 10px var(--matrix-green);
+  text-shadow: 0 0 10px var(--matrix-green), 0 0 20px rgba(0, 0, 0, 0.9); /* Heavy shadow for contrast */
 }
 
 .telugu-name {
@@ -65,6 +65,7 @@ header {
   font-family: Arial, sans-serif; /* Fallback for Telugu characters */
   display: block;
   margin-top: 0.5rem;
+  text-shadow: 0 0 10px var(--telugu-color), 0 0 20px rgba(0, 0, 0, 0.9);
 }
 
 .profile-links a {
@@ -75,6 +76,7 @@ header {
   padding: 0.5rem 1rem;
   margin-right: 1rem;
   transition: all 0.3s;
+  background-color: rgba(0, 0, 0, 0.6); /* Translucent buttons for readability */
 }
 
 .profile-links a:hover {
@@ -98,6 +100,7 @@ nav a {
   text-decoration: none;
   color: var(--matrix-green);
   font-weight: bold;
+  text-shadow: 0 0 10px var(--matrix-green), 0 0 20px rgba(0, 0, 0, 0.9);
 }
 
 h2 {
@@ -106,25 +109,35 @@ h2 {
   padding-bottom: 0.5rem;
   margin-top: 3rem;
   text-transform: uppercase;
+  text-shadow: 0 0 10px var(--matrix-green), 0 0 20px rgba(0, 0, 0, 0.9);
 }
 
 p {
   line-height: 1.8;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9); /* Strong text-shadow for readability on rain */
 }
 
 a {
   color: var(--matrix-green);
   text-decoration: underline;
+  text-shadow: 0 0 10px var(--matrix-green), 0 0 20px rgba(0, 0, 0, 0.9);
 }
 
 a:hover {
-  text-shadow: 0 0 10px var(--matrix-green);
+  text-shadow: 0 0 20px var(--matrix-green), 0 0 30px rgba(0, 0, 0, 1);
 }
 
 footer {
   text-align: center;
   font-size: 0.9rem;
   color: var(--matrix-dark-green);
+  text-shadow: 0 0 10px var(--matrix-dark-green), 0 0 20px rgba(0, 0, 0, 0.9);
+}
+
+/* Enhancing KaTeX on Matrix background */
+.katex {
+  color: var(--matrix-green) !important;
+  text-shadow: 0 0 10px var(--matrix-green), 0 0 20px rgba(0, 0, 0, 0.9);
 }
 
 @media (max-width: 750px) {
