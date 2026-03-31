@@ -1,165 +1,139 @@
 :root {
   --bg-color: #ffffff;
-  --text-color: #1a1a1a;
-  --link-color: #0056b3;
-  --secondary-text-color: #666666;
-  --border-color: #eeeeee;
-  --max-width: 720px;
+  --text-color: #000000;
+  --link-color: #0000ee; /* Standard academic blue */
+  --visited-link: #551a8b;
+  --max-width: 900px;
+  --serif-font: 'Lora', Georgia, 'Times New Roman', serif;
+  --sans-font: 'Inter', Arial, sans-serif;
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-family: var(--serif-font);
   line-height: 1.6;
   color: var(--text-color);
   background-color: var(--bg-color);
   max-width: var(--max-width);
-  margin: 0 auto;
-  padding: 3rem 1.5rem;
+  margin: 2rem auto;
+  padding: 0 2rem;
 }
 
 header {
-  margin-bottom: 3.5rem;
-  display: flex;
-  align-items: center;
-  gap: 2rem;
+  margin-bottom: 3rem;
+  overflow: hidden; /* Clearfix for floated image */
 }
 
-header .profile-photo {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 1px solid var(--border-color);
-  background-color: #f9f9f9;
+.profile-photo {
+  float: right;
+  width: 300px; /* Big as requested */
+  height: auto;
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 4px; /* Slight rounding for a clean look */
 }
 
-header .profile-info {
-  flex: 1;
+.profile-info h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
 }
 
-header h1 {
-  font-size: 2.25rem;
-  font-weight: 700;
-  margin: 0 0 0.5rem 0;
-  letter-spacing: -0.02em;
-}
-
-header p.lead {
-  font-size: 1.15rem;
-  color: var(--secondary-text-color);
-  margin: 0 0 1rem 0;
+.lead {
+  font-size: 1.25rem;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+  color: #333;
 }
 
 .profile-links {
-  display: flex;
-  gap: 1.5rem;
-  font-size: 0.95rem;
-  font-weight: 500;
+  margin-top: 1rem;
 }
 
 .profile-links a {
-  color: var(--text-color);
-  border-bottom: 1px solid var(--border-color);
-  padding-bottom: 2px;
-}
-
-.profile-links a:hover {
-  border-bottom-color: var(--link-color);
-  color: var(--link-color);
-  text-decoration: none;
+  margin-right: 1.5rem;
+  font-weight: 500;
 }
 
 nav {
-  position: sticky;
-  top: 0;
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(8px);
-  z-index: 100;
-  margin-bottom: 3.5rem;
-  padding: 1rem 0;
-  border-bottom: 1px solid var(--border-color);
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 0.5rem 0;
+  margin-bottom: 3rem;
 }
 
 nav ul {
   list-style: none;
   padding: 0;
-  margin: 0;
   display: flex;
-  flex-wrap: wrap;
   gap: 2rem;
 }
 
 nav a {
   text-decoration: none;
-  color: var(--secondary-text-color);
-  font-weight: 500;
-  font-size: 0.9rem;
-  transition: color 0.2s;
+  font-family: var(--sans-font);
+  font-size: 0.95rem;
+  color: var(--text-color);
 }
 
 nav a:hover {
-  color: var(--text-color);
-  text-decoration: none;
+  text-decoration: underline;
 }
 
-article h2 {
-  font-size: 1.6rem;
-  margin: 4rem 0 1.5rem 0;
-  font-weight: 600;
-  border-bottom: 1px solid var(--border-color);
-  padding-bottom: 0.75rem;
-  scroll-margin-top: 5rem;
+main {
+  clear: both;
 }
 
-section {
-  margin-bottom: 3rem;
+h2 {
+  font-size: 1.75rem;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.25rem;
+  margin: 3rem 0 1rem 0;
 }
 
-section h3 {
-  font-size: 1.2rem;
-  margin-bottom: 0.6rem;
-  font-weight: 600;
+h3 {
+  font-size: 1.3rem;
+  margin-top: 2rem;
 }
 
 ul {
-  padding-left: 1.5rem;
-  list-style-type: disc;
+  margin-bottom: 1.5rem;
 }
 
 li {
-  margin-bottom: 1rem;
-}
-
-li strong {
-  font-weight: 600;
-}
-
-.project-links {
-  margin-top: 0.5rem;
-  font-size: 0.95rem;
+  margin-bottom: 0.75rem;
 }
 
 a {
   color: var(--link-color);
-  text-decoration: none;
 }
 
-a:hover {
-  text-decoration: underline;
+a:visited {
+  color: var(--visited-link);
 }
 
 footer {
-  margin-top: 6rem;
-  padding-top: 2rem;
-  border-top: 1px solid var(--border-color);
-  font-size: 0.85rem;
-  color: var(--secondary-text-color);
-  text-align: center;
+  margin-top: 5rem;
+  padding: 2rem 0;
+  border-top: 1px solid #ccc;
+  font-size: 0.9rem;
+  text-align: left;
 }
 
-@media (max-width: 600px) {
-  header { flex-direction: column; text-align: center; gap: 1rem; }
-  header h1 { font-size: 1.8rem; }
-  nav ul { gap: 1rem; justify-content: center; }
-  .profile-links { justify-content: center; }
+/* KaTeX Adjustment */
+.katex { font-size: 1.1em !important; }
+
+@media (max-width: 750px) {
+  .profile-photo {
+    float: none;
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: 0 auto 2rem auto;
+  }
+  .profile-info {
+    text-align: center;
+  }
+  nav ul {
+    justify-content: center;
+  }
 }
