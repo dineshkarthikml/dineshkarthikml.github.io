@@ -2,103 +2,165 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Movies - Dinesh Karthik Mulumudi</title>
-    <style>
-        body {
-            max-width: 800px;
-            margin: 2rem auto;
-            padding: 0 2rem;
-            font-family: 'Times New Roman', Times, serif;
-            line-height: 1.6;
-            color: #000;
-            background-color: #fff;
-        }
-        header {
-            border-bottom: 2px solid #000;
-            padding-bottom: 1rem;
-            margin-bottom: 2rem;
-        }
-        nav {
-            margin-bottom: 2rem;
-            padding-bottom: 1rem;
-            border-bottom: 1px solid #ccc;
-        }
-        nav a {
-            text-decoration: none;
-            color: #004499;
-            font-weight: bold;
-            margin-right: 1.5rem;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        article {
-            background: white;
-            padding: 2rem;
-            border: 1px solid #eee;
-            border-radius: 4px;
-        }
-        h1 { margin-top: 0; font-size: 2.5rem; }
-        h2 { color: #000; border-bottom: 2px solid #000; padding-bottom: 0.5rem; text-transform: uppercase; }
-        .movie-entry { margin-bottom: 2rem; }
-        .movie-title { font-size: 1.35rem; font-weight: bold; }
-        .movie-year { color: #666; font-style: italic; }
-        footer {
-            margin-top: 4rem;
-            text-align: center;
-            font-size: 1rem;
-            color: #555;
-            border-top: 2px solid #000;
-            padding-top: 2rem;
-        }
-    </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Movies &amp; Series - Dinesh Karthik Mulumudi</title>
+<meta name="description" content="Movies and series Dinesh Karthik Mulumudi has watched over the years, across languages and genres.">
+
+<!-- Same plain template as index.html: one file, one small embedded stylesheet, no JavaScript. -->
+
+<style>
+  body {
+    font-family: "Times New Roman", Times, Georgia, serif;
+    background-color: #ffffff;
+    color: #000000;
+    max-width: 760px;
+    margin: 0;
+    padding: 1.25rem 1rem 3rem;
+    line-height: 1.5;
+    font-size: 17px;
+  }
+
+  a { color: #0000ee; text-decoration: underline; }
+  a:visited { color: #551a8b; }
+  a:active { color: #ff0000; }
+
+  h1 { font-size: 1.7rem; margin: 0 0 0.15em 0; }
+  h2 { font-size: 1.25rem; margin: 1.4em 0 0.4em 0; }
+  h3 { font-size: 1.02rem; margin: 1.1em 0 0.1em 0; }
+
+  p { margin: 0 0 0.8em 0; }
+
+  hr { border: none; border-top: 1px solid #000000; margin: 1.3em 0; }
+
+  nav p { margin: 0; }
+
+  .meta { font-style: italic; color: #333333; font-weight: normal; }
+
+  footer p { font-size: 0.9rem; color: #333333; margin: 0 0 0.3em 0; }
+
+  @media (max-width: 600px) {
+    body { padding: 1rem 0.85rem 2.5rem; font-size: 16px; }
+  }
+</style>
 </head>
 
 <body>
-    <nav>
-        <a href="index.html">About</a>
-        <a href="publications.html">Publications</a>
-        <a href="experience.html">Experience</a>
-        <a href="projects.html">Projects</a>
-        <a href="education.html">Education</a>
-        <a href="blogs.html">For Fun</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-    <header>
-        <h1>Movie Recommendations</h1>
-        <p>A simple list of movies I've watched and my thoughts on them.</p>
-    </header>
 
-    <main>
-        <article>
-            <section class="movie-entry">
-                <h2>All-Time Favorites</h2>
-                <div class="movie-title">The Matrix <span class="movie-year">(1999)</span></div>
-                <p>A revolutionary film that perfectly blends high-concept science fiction with philosophy and groundbreaking action. It's the ultimate movie about questioning reality.</p>
-            </section>
+<!-- ===================== HEADER ===================== -->
+<header>
+  <h1>Dinesh Karthik Mulumudi</h1>
+  <p>Movies &amp; Series I&rsquo;ve Watched</p>
+  <p>Pune, Maharashtra, India</p>
+</header>
 
-            <section class="movie-entry">
-                <div class="movie-title">Inception <span class="movie-year">(2010)</span></div>
-                <p>Christopher Nolan's masterpiece on the architecture of dreams. It's a complex, visually stunning thriller that stays with you long after the credits roll.</p>
-            </section>
+<nav aria-label="Section navigation">
+  <p>
+    <a href="index.html">Home</a> |
+    <a href="index.html#about">About</a> |
+    <a href="news.html">News</a> |
+    <a href="index.html#research">Research</a> |
+    <a href="index.html#publications">Publications</a> |
+    <a href="index.html#projects">Projects</a> |
+    <a href="index.html#education">Education</a> |
+    <a href="index.html#cv">CV</a> |
+    <a href="index.html#contact">Contact</a> |
+    <a href="index.html#interests">Interests</a>
+  </p>
+</nav>
 
-            <section class="movie-entry">
-                <div class="movie-title">Interstellar <span class="movie-year">(2014)</span></div>
-                <p>An emotional journey through space and time. The scientific accuracy combined with a powerful father-daughter story makes it one of my favorites.</p>
-            </section>
+<hr>
 
-            <section class="movie-entry">
-                <h2>Recent Watches</h2>
-                <p>I'll be adding more reviews and thoughts here as I watch new films. Stay tuned!</p>
-            </section>
-        </article>
-    </main>
+<main>
 
-    <footer>
-        <p>&copy; 2026 Dinesh Karthik Mulumudi</p>
-    </footer>
+  <p>
+    A simple collection of movies and series I&rsquo;ve watched over the
+    years, across different languages, cultures, and genres, from romance
+    and coming-of-age stories to science fiction, fantasy, adventure, and
+    drama.
+  </p>
+
+  <!-- ===================== THE LIST (grouped by language, then year) ===================== -->
+  <h2>English</h2>
+
+  <h3><em>The Matrix</em> <span class="meta">1999</span></h3>
+  <p>A revolutionary film that perfectly blends high-concept science fiction with philosophy and groundbreaking action. It&rsquo;s the ultimate movie about questioning reality.</p>
+
+  <h3><em>Harry Potter</em> Series <span class="meta">2001&ndash;2011</span></h3>
+  <p>A fantasy film series following Harry Potter&rsquo;s journey through Hogwarts, friendship, magic, and the battle against Voldemort.</p>
+
+  <h3><em>Pirates of the Caribbean</em> Series <span class="meta">2003&ndash;2017</span></h3>
+  <p>A fantasy-adventure series filled with pirates, cursed treasures, sea battles, and the unforgettable Captain Jack Sparrow.</p>
+
+  <h3><em>The Big Bang Theory</em> <span class="meta">2007&ndash;2019</span></h3>
+  <p>A TV series rather than a movie, following a group of scientists and their friendships, relationships, and wonderfully nerdy lives.</p>
+
+  <h3><em>(500) Days of Summer</em> <span class="meta">2009</span></h3>
+  <p>A romantic comedy-drama exploring love, expectations, memories, and the difference between how we imagine relationships and how they actually unfold.</p>
+
+  <h3><em>Inception</em> <span class="meta">2010</span></h3>
+  <p>Christopher Nolan&rsquo;s masterpiece on the architecture of dreams. It&rsquo;s a complex, visually stunning thriller that stays with you long after the credits roll.</p>
+
+  <h3><em>Interstellar</em> <span class="meta">2014</span></h3>
+  <p>An emotional journey through space and time. The scientific ideas combined with a powerful father-daughter story make it one of my favorites.</p>
+
+  <h3><em>The Odyssey</em> <span class="meta">2026</span></h3>
+
+  <hr>
+
+  <h2>Japanese</h2>
+
+  <h3><em>Love Letter</em> <span class="meta">1995</span></h3>
+  <p>A Japanese romantic drama (&#12521;&#12502;&#12524;&#12479;&#12540; / Rabu Ret&#257;).</p>
+
+  <hr>
+
+  <h2>Mandarin Chinese &amp; Japanese</h2>
+
+  <h3><em>18&times;2 Beyond Youthful Days</em> <span class="meta">2024</span></h3>
+  <p>A nostalgic romantic journey about youth, memories, travel, missed opportunities, and a love that continues to live through time.</p>
+
+  <hr>
+
+  <h2>Telugu</h2>
+
+  <h3><em>Seethamma Vakitlo Sirimalle Chettu</em> <span class="meta">2013</span></h3>
+  <p>A warm family drama centered on relationships, brotherhood, family values, and the small emotions that hold a family together.</p>
+
+  <h3><em>Yevade Subramanyam</em> <span class="meta">2015</span></h3>
+  <p>A journey of self-discovery that explores ambition, friendship, happiness, and finding meaning beyond material success.</p>
+
+  <h3><em>35 Chinna Katha Kaadu</em> <span class="meta">2024</span></h3>
+  <p>A heartfelt story revolving around education, family, childhood, and the pressures and expectations surrounding academic success.</p>
+
+  <h3><em>8 Vasantalu</em> <span class="meta">2025</span></h3>
+  <p>A romantic coming-of-age drama about love, emotional growth, memories, and different phases of a young woman&rsquo;s life.</p>
+
+  <h3><em>Rao Bahadur</em> <span class="meta">2026</span></h3>
+
+  <hr>
+
+  <p>
+    Looking back at the list, it&rsquo;s a real mix: Telugu, English,
+    Japanese, and Mandarin Chinese cinema, plus a couple of fantasy
+    franchises and one very long-running sitcom. From <em>Love Letter</em>
+    and <em>(500) Days of Summer</em> to <em>The Matrix</em>,
+    <em>Interstellar</em>, <em>Yevade Subramanyam</em>, and
+    <em>18&times;2 Beyond Youthful Days</em>, they cover very different
+    ideas of love, life, identity, family, adventure, dreams, and
+    self-discovery, which is more or less why I keep watching.
+  </p>
+
+</main>
+
+<hr>
+
+<!-- ===================== FOOTER ===================== -->
+<footer>
+  <p>Last updated: August 2026.</p>
+  <p>This page is maintained by Dinesh Karthik Mulumudi.</p>
+  <p>Best viewed with any browser.</p>
+</footer>
+
 </body>
-
 </html>
